@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity
                 switch (value)
                 {
                     //casees for every part of wheel and its angle conditions for exact pointing
+                    //Spin Wheel image is divided in 10 parts of 36 degree and angles in Rotate Animation
+                    //parameters are given according to 36 degree gaps between one another
 
                     case 0:
                         RotateAnimation zero = new RotateAnimation(0, 702,
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity
                                 RotateAnimation.RELATIVE_TO_SELF, 0.5f);
 
                         one.setFillAfter(true);
-                        one.setDuration(2000);
+                        one.setDuration(2000);          //Spinning wheel is set to rotate for 2sec
                         one.setInterpolator(new DecelerateInterpolator());
 
                         wheelImage.startAnimation(one);
